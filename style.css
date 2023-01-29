@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+   color: black;
+   justify-content: center;
+}
+
+.container {
+    width: 300px;
+    background-color: antiquewhite;
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+form {
+    margin: 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    padding: 5px 8px;
+}
+
+form input {
+    padding: 5px 10px;
+    width: 200px;
+}
+
+#lista-tarefa {
+    margin: 25px 40px;
+}
+
+#lista-tarefa li {
+    margin-bottom: 10px;
+}
+
+.checktarefa {
+    text-decoration: line-through;
+}
