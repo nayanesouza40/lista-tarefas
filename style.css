@@ -119,3 +119,8 @@ form #ol input:focus {
 .checktarefa {
     text-decoration: line-through;
 }
+
+.invalido {
+    border: solid 1px red;
+    color: red;
+}

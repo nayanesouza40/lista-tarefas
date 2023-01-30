@@ -1,9 +1,19 @@
 $(document).ready(() => {
     $('#form').submit((e) => {
-      e.preventDefault();
-      var tarefa = $('#tarefa').val();      
-      $('#lista-tarefa').append('<div> <li> <p>' + tarefa + '</p></li></div');
-      $('#tarefa').val('');
+    e.preventDefault();
+      $('#campo').removeClass('invalido');
+
+      try {
+        var tarefa = $('#tarefa').val();  
+        if ($('#tarefa').val() == '') {
+          throw (error);
+        } else {
+          $('#lista-tarefa').append('<div> <li> <p>' + tarefa + '</p></li></div');
+          $('#tarefa').val('');
+        }
+      } catch {
+        $('#campo').toggleClass('invalido');
+     }
     });
 
     $('#lista-tarefa').on('click', 'p', function (){
